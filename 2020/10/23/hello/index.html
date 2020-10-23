@@ -22,15 +22,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false};
   </script>
 
-  <meta name="description" content="今天学习了hexo，感觉自己棒棒哒！">
+  <meta name="description" content="今天学习了hexo，感觉自己棒棒哒！Hexo 发布新博客创建博客 Hexo发布新博客非常简单，首先我们可以用命令创建博客文件： hexo new 博客名利用这条命令我们可以创建一个新的md文件，比如我们输入hexo new hello，那么框架就会自动替我们创建一个叫做hello.md的文件 创建的md文件存放在我们博客文件夹下source&#x2F;_posts文件夹内，因此我们可以找到这个文件并编辑内容">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hello">
 <meta property="og:url" content="http://example.com/2020/10/23/hello/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="今天学习了hexo，感觉自己棒棒哒！">
+<meta property="og:description" content="今天学习了hexo，感觉自己棒棒哒！Hexo 发布新博客创建博客 Hexo发布新博客非常简单，首先我们可以用命令创建博客文件： hexo new 博客名利用这条命令我们可以创建一个新的md文件，比如我们输入hexo new hello，那么框架就会自动替我们创建一个叫做hello.md的文件 创建的md文件存放在我们博客文件夹下source&#x2F;_posts文件夹内，因此我们可以找到这个文件并编辑内容">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-10-23T12:58:24.000Z">
-<meta property="article:modified_time" content="2020-10-23T13:02:48.641Z">
+<meta property="article:modified_time" content="2020-10-23T13:13:30.143Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -224,7 +224,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-10-23 12:58:24 / Modified: 13:02:48" itemprop="dateCreated datePublished" datetime="2020-10-23T12:58:24+00:00">2020-10-23</time>
+              <time title="Created: 2020-10-23 12:58:24 / Modified: 13:13:30" itemprop="dateCreated datePublished" datetime="2020-10-23T12:58:24+00:00">2020-10-23</time>
             </span>
 
           
@@ -236,7 +236,24 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>今天学习了hexo，感觉自己棒棒哒！</p>
+        <p>今天学习了hexo，感觉自己棒棒哒！<br>Hexo 发布新博客<br>创建博客</p>
+<p>Hexo发布新博客非常简单，首先我们可以用命令创建博客文件：</p>
+<p>hexo new 博客名<br>利用这条命令我们可以创建一个新的md文件，比如我们输入hexo new hello，那么框架就会自动替我们创建一个叫做hello.md的文件</p>
+<p>创建的md文件存放在我们博客文件夹下source/_posts文件夹内，因此我们可以找到这个文件并编辑内容</p>
+<p>发布博客</p>
+<p>发布博客的命令参考上节课的内容</p>
+<p>Hexo 更换主题<br>我们利用hexo init 博客文件夹命令创建的博客，默认的主题是landspace，这里老师教大家如何更换为next主题。</p>
+<p>更换主题是一件很有趣但是很复杂的事情，这里老师只教大家最基础的配置，如果大家想要研究，可以看这个文档</p>
+<p>更换主题可以达到我们喜欢的外观，在学习了P3的前端知识后，我们就可以自己画主题，甚至可以去Hexo投稿，成为官方主题，这样对找前端工作是一个非常大的加分项。</p>
+<p>下载主题文件</p>
+<p>首先我们下载新的主题，一般来说这是一个git仓库，比如next的下载我们可以在博客根目录中使用：</p>
+<p>git clone <a target="_blank" rel="noopener" href="https://gitee.com/xiaoyebing/hexo-theme-next.git">https://gitee.com/xiaoyebing/hexo-theme-next.git</a> themes/next<br>这里<a target="_blank" rel="noopener" href="https://gitee.com/xiaoyebing/hexo-theme-next.git%E6%98%AF%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80">https://gitee.com/xiaoyebing/hexo-theme-next.git是仓库地址</a></p>
+<p>themes/next 表示下载到根目录中的themes文件夹下，下载为next文件夹，注意前面有个空格和仓库地址分隔哦</p>
+<p> 因为github在国外，所以老师提供了一个gitee的地址，这是一个国内的托管网站，网速会快很多，大家也可以去官网下载next的最新主题。</p>
+<p>大家可以思考一下，如果我在themes文件夹中下载主题，命令该如何写？</p>
+<p>更改文件配置</p>
+<p>我们打开_config.yml这个文件，将配置中的theme: landscape改为theme: next</p>
+<p>注意next和:之间有一个空格哦，这是yml格式文件配置的特点，这里可以作为一个小tip记住。</p>
 
     </div>
 
